@@ -1,0 +1,132 @@
+#third {
+  padding: 0px 150px 0 150px;
+  font-family: 'Montserrat', sans-serif;
+  position: relative;
+}
+
+.header__third, .menu__third, .main__third, .socials__third, .footer__third {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__third, .menu__third, .main__third {
+  align-items: center;
+}
+
+.header__third {
+  margin-top: 90px;
+}
+
+.siteName__third, .menuOption__third, .socialButton__third, .navButton__third {
+  cursor: pointer;
+}
+
+.menu__third {
+  gap: 40px;
+  text-transform: uppercase;
+}
+
+.menuOption__third:hover {
+  text-decoration: underline;
+}
+
+.main__third {
+  margin: 90px 0 90px 0;
+  height: 500px;
+}
+
+.leftBorder {
+  width: 1px;
+  height: 80%;
+  background-color: black;
+}
+
+.sliderCircle {
+  width: 500px;
+  height: 500px;
+  background-color: orange;
+  border-radius: 50%;
+}
+
+.sliderBlock__third {
+  position: absolute;
+  width: 800px;
+  height: 80vh;
+  bottom: 0;
+  left: 0;
+  right: 40px;
+  margin: auto;
+}
+
+.slider__third {
+  height: 100%;
+  position: relative;
+}
+
+.slider__third > p, .slider__third > h2 {
+  width: 35%;
+  position: absolute;
+  margin: 0;
+}
+
+.slider__third > p {
+  bottom: 40%;
+  left: 5%;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.slider__third > h2 {
+  top: 10%;
+  right: 10%;
+  width: max-content;
+  font-size: 160px;
+  font-weight: 400;
+}
+
+.sliderImage {
+  height: 100%;
+  width: 80%;
+  margin: auto;
+}
+
+.socials__third {
+  flex-direction: column;
+  gap: 20px;
+}
+
+.socialButton__third, .navButton__third {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  font-size: 22px;
+}
+
+.socialButton__third {
+  background-color: black;
+  color: white;
+  border: 0;
+}
+
+.footer__third {
+  position: absolute;
+  align-items: end;
+  width: calc(100% - 300px);
+  bottom: 5vh;
+}
+
+.siteDesk__third {
+  width: 20%;
+  font-size: 16px;
+}
+
+.counterArrows__third {
+  display: flex;
+  gap: 30px;
+}
+
+.navButton__third {
+  border: 2px solid darkgrey;
+  background-color: rgba(255, 255, 255, 0);
+  color: darkgrey;
+}
