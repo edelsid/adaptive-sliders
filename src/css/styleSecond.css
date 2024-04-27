@@ -76,6 +76,10 @@
   background-color: rgba(222, 184, 135, 0);
 }
 
+.menuOption__second a {
+  color: black;
+}
+
 .menuOption__second:hover {
   text-decoration: underline;
 }

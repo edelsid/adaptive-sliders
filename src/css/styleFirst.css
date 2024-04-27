@@ -1,5 +1,5 @@
 #first {
-  padding: 50px 250px 50px 250px;
+  padding: 50px 200px 50px 200px;
   font-family: 'Roboto', sans-serif;
   overflow: hidden;
 }
@@ -35,6 +35,7 @@
 }
 
 .menu__first {
+  line-height: 40px;
   font-size: 40px;
   background-color: rgba(222, 184, 135, 0);
 }
@@ -45,11 +46,11 @@
 
 .textBlock__first {
   width: 50%;
-  padding: 0 100px 0 150px;
+  padding: 0 150px 0 100px;
 }
 
 .textBlock__first > h1 {
-  font-size: 60px;
+  font-size: 70px;
   margin-bottom: 40px;
 }
 
@@ -59,7 +60,8 @@
 
 .sliderCounter__first {
   margin-bottom: 20px;
-  width: 35%;
+  width: max-content;
+  gap: 20px;
 }
 
 .navButton__first {
@@ -73,19 +75,43 @@
 }
 
 .sliderNumbers__first > li {
+  user-select: none;
   cursor: pointer;
 }
 
-.sliderBlock__first {
-  width: max-content;
-  gap: 30px;
+.selected {
+  text-decoration: underline;
+}
+
+.sliderBlockWrapper {
   height: 60vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.borderGradient {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 15vh;
+  background: linear-gradient(90deg, white 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.sliderBlock__first {
+  position: absolute;
+  width: max-content;
+  transition: 0.5s linear 0s;
+  gap: 30px;
+  height: 100%;
 }
 
 .slider__first {
   width: 400px;
   height: 100%;
-  background-color: aliceblue;
+  background-position: center;
+  background-size: cover;
+  background-color: black;
 }
 
 .socials__first {

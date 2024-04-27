@@ -25,6 +25,10 @@ module.exports = {
         test: /\.png$/,
         type: 'asset/inline',
       },
+      {
+        test: /\.jpg$/,
+        type: 'asset/resource',
+      },
     ],
   },
   plugins: [
