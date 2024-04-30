@@ -11,7 +11,7 @@
   font-size: 30px;
 }
 
-.searchForm, .menu__second, .socials__second, .counterArrows__second {
+.searchForm, .menu__second, .socials__second, .navArrows__second {
   display: flex;
   align-items: center;
 }
@@ -33,6 +33,7 @@
 
 .searchBar {
   font-family: 'Montserrat', sans-serif;
+  background-color: rgba(255, 255, 255, 0);
   color: darkgrey;
   font-size: 14px;
   padding: 5px;
@@ -85,8 +86,10 @@
 }
 
 .sliderBlock__second {
+  background-position: center;
+  background-size: cover;
   width: 50%;
-  background-color: aqua;
+  background-color: black;
 }
 
 .textBlock__second {
@@ -109,7 +112,7 @@
   font-size: 16px;
 }
 
-.counterArrows__second {
+.navArrows__second {
   gap: 50px;
   margin: 50px 0 50px 0;
 }
