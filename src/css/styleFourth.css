@@ -13,6 +13,7 @@
 }
 
 .textWrapper {
+  width: calc(100% - 650px);
   justify-content: space-between;
 }
 
@@ -35,6 +36,13 @@
   border-radius: 50%;
 }
 
+.main__fourth {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .menu__fourth, .socials__fourth, .sliderCounter__fourth {
   gap: 20px;
 }
@@ -48,8 +56,7 @@
 }
 
 .textBlock__fourth {
-  margin-top: -15vh ;
-  width: 40%;
+  width: 70%;
 }
 
 .textBlock__fourth > h1 {
@@ -65,16 +72,15 @@
 
 .pictureBlock__fourth {
   position: absolute;
-  top: -300px;
+  top: -350px;
   right: 250px;
   display: flex;
   gap: 40px;
 }
 
 .sliderCounter__fourth {
-  margin-top: 530px;
   align-items: center;
-  width: 35%;
+  width: 15%;
 }
 
 .navButton__fourth {
@@ -88,6 +94,15 @@
   font-weight: bold;
 }
 
+.sliderNumbers__fourth > li {
+  user-select: none;
+  cursor: pointer;
+}
+
+.selected {
+  text-decoration: underline;
+}
+
 .sliderBlock__fourth {
   height: max-content;
   gap: 30px;
@@ -95,7 +110,7 @@
 
 .slider__fourth {
   width: 650px;
-  height: 500px;
+  height: 550px;
   background-position: center;
   background-size: cover;
   background-color: black;

@@ -18,8 +18,6 @@ export default class FirstBlock {
   }
 
   bindImages() {
-    this.wrapper.parentElement.style.width = `${430 * this.sliders.length}px`;
-
     this.sliders.forEach(element => {
       const newSlider = document.createElement("li");
       const newCount = document.createElement("li");
@@ -32,6 +30,8 @@ export default class FirstBlock {
       this.wrapper.appendChild(newSlider);
       this.counter.appendChild(newCount);
     });
+
+    this.wrapper.parentElement.style.width = `${(this.wrapper.firstElementChild.offsetWidth + 30) * this.sliders.length}px`;
   }
 
   bindButtons() {
@@ -42,7 +42,7 @@ export default class FirstBlock {
   }
 
   change(e) {
-    const width = this.wrapper.firstChild.offsetWidth + 30;
+    const width = this.wrapper.firstElementChild.offsetWidth + 30;
     switch (e.target.id) {
       case "next": this.next(width);
         break;
