@@ -3,16 +3,19 @@ export default class ThirdBlock {
     this.body = block;
     this.sliders = sliders;
     this.currentSlider = 0;
+    this.circle = block.querySelector(".sliderCircle");
     this.sliderWindow = block.querySelector(".sliderImage");
     this.counter = block.querySelector(".sliderCounter__third");
     this.change = this.change.bind(this);
     this.next = this.next.bind(this);
     this.back = this.back.bind(this);
+    this.colors = ["#79ff7d", "#df36ca", "#9b3131", "#c0e91a", "#ffa500", "#dcfa58", "#4225aa"];
   }
 
   init() {
     this.bindImage();
     this.bindButtons();
+    this.circle.style.backgroundColor = this.colors[this.currentSlider];
   }
 
   bindImage() {
@@ -30,6 +33,7 @@ export default class ThirdBlock {
   change(e) {
     e.target.id === "next" ? this.next() : this.back();
     this.bindImage();
+    this.circle.style.backgroundColor = this.colors[this.currentSlider];
   }
 
   next() {

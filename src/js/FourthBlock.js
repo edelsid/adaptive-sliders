@@ -86,7 +86,7 @@ export default class FourthBlock {
 
   setCounter() {
     this.counter.childNodes.forEach((element) => {
-      parseInt(element.id) === this.currentSlider ? element.className = "selected" : element.classList = "";
+      parseInt(element.id) === this.currentSlider ? element.className = "selected__fourth" : element.classList = "";
     });
   }
 }

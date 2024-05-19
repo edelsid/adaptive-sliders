@@ -78,7 +78,7 @@ export default class FirstBlock {
 
   setCounter() {
     this.counter.childNodes.forEach((element) => {
-      parseInt(element.id) === this.currentSlider ? element.className = "selected" : element.classList = "";
+      parseInt(element.id) === this.currentSlider ? element.className = "selected__first" : element.classList = "";
     });
   }
 }

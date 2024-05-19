@@ -24,8 +24,25 @@ a {
 }
 
 .panel {
-  height: 100vh;
   border-bottom: 1px solid lightgray;
   background-color: rgb(255, 255, 255);
-  font-size: 18px;
+  height: 100vh;
+}
+
+@media (min-width: 1200px) {
+  .panel {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1199px) {
+  .panel {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 640px) {
+  .panel {
+    font-size: 14px;
+  }
 }

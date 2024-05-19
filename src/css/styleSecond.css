@@ -17,7 +17,6 @@
 }
 
 .searchForm {
-  justify-content: end;
   gap: 10px;
 }
 
@@ -51,9 +50,6 @@
 
 .whiteBlock {
   position: relative;
-  width: 25%;
-  margin: 80px 0 80px 0;
-  flex-direction: column;
 }
 
 .menu__second, .socials__second {
@@ -62,14 +58,6 @@
 
 .menu__second {
   font-weight: bold;
-}
-
-.additional {
-  padding-left: 20%;
-}
-
-.additional > p {
-  margin: 30px 0 50px 0;
 }
 
 .socialButton__second {
@@ -88,16 +76,11 @@
 .sliderBlock__second {
   background-position: center;
   background-size: cover;
-  width: 50%;
   background-color: black;
 }
 
 .textBlock__second {
-  width: 50vh;
-  height: 50vh;
   position: absolute;
-  top: 25%;
-  left: 50%;
 }
 
 .textBlock__second h1 {
@@ -109,6 +92,7 @@
 }
 
 .tripDesk {
+  width: 85%;
   font-size: 16px;
 }
 
@@ -120,4 +104,125 @@
 .navButton__second {
   background-color: rgba(222, 184, 135, 0);
   font-size: 20px;
+}
+
+@media (min-width: 1200px) {
+  #second {
+    padding: 0 250px 0 250px;
+  }
+
+  .whiteBlock {
+    width: 25%;
+    margin: 80px 0 80px 0;
+    flex-direction: column;
+  }
+
+  .textBlock__second {
+    height: 50vh;
+    top: 25%;
+    left: 50%;
+  }
+
+  .sliderBlock__second {
+    width: 50%;
+  }
+
+  .siteName__second, .menu__second {
+    padding-right: 20%;
+  }
+
+  .additional, .searchForm {
+    padding-left: 20%;
+  }
+
+  .additional > p {
+    margin: 30px 0 50px 0;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1199px) {
+  @media (orientation: portrait) {
+    #second {
+      padding: 30px 0 30px 0;
+    }
+
+    .main__second {
+      flex-direction: column;
+    }
+
+    .whiteBlock {
+      align-items: baseline;
+      padding: 0 70px 0 70px;
+      margin: 30px 0 30px 0;
+    }
+
+    .whiteBlock:first-child {
+      height: 15%;
+    }
+
+    .whiteBlock:last-child {
+      height: 20%;
+      flex-direction: row-reverse;
+    }
+
+    .searchBar {
+      display: none;
+    }
+
+    .searchForm::before {
+      font-size: 30px;
+    }
+
+    .textBlock__second {
+      width: 50vh;
+      top: 160%;
+    }
+
+    .sliderBlock__second {
+      height: 65%;
+    }
+
+    .additional {
+      width: 70%;
+    }
+  }
+
+  @media (orientation: landscape) {
+    #second {
+      padding: 0 150px 0 150px;
+    }
+
+    .whiteBlock {
+      width: 25%;
+      margin: 80px 0 80px 0;
+      flex-direction: column;
+    }
+
+    .textBlock__second {
+      height: 50vh;
+      top: 25%;
+      left: 25%;
+    }
+
+    .sliderBlock__second {
+      width: 50%;
+    }
+
+    .siteName__second, .menu__second {
+      padding-right: 20%;
+    }
+
+    .additional, .searchForm {
+      padding-left: 20%;
+    }
+
+    .additional > p {
+      margin: 30px 0 60px 0;
+      font-size: 16px;
+    }
+  }  
+}
+
+@media (max-width: 640px) {
+
 }
