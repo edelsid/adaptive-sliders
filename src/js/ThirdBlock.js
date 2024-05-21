@@ -9,7 +9,7 @@ export default class ThirdBlock {
     this.change = this.change.bind(this);
     this.next = this.next.bind(this);
     this.back = this.back.bind(this);
-    this.colors = ["#79ff7d", "#df36ca", "#9b3131", "#c0e91a", "#ffa500", "#dcfa58", "#4225aa"];
+    this.colors = ["#ffa500", "#79ff7d", "#df36ca", "#9b3131", "#c0e91a", "#dcfa58", "#4225aa"];
   }
 
   init() {
