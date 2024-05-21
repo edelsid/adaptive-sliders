@@ -293,6 +293,11 @@
       right: 7%;
     }
 
+    .siteDesk__third {
+      width: 30%;
+      font-size: 14px;
+    }
+
     .sliderImage {
       width: 70%;
     }
@@ -301,17 +306,257 @@
       background: linear-gradient(0deg, white 25%, rgba(255, 255, 255, 0) 100%);
     }
 
+    .footer__third {
+      width: calc(100% - 240px);
+    }
+
+    @media (max-height: 450px) {
+      #third {
+        padding: 0px 60px 0 60px;
+      }
+
+      .header__third {
+        padding-top: 30px;
+      }
+
+      .siteName__third {
+        font-size: 22px;
+      }
+
+      .menu__third {
+        gap: 20px;
+        font-size: 16px;
+      }
+
+      .main__third {
+        margin-top: 20px;
+        justify-content: center;
+        align-items: start;
+      }
+
+      .sliderCircle {
+        width: 250px;
+        height: 250px;
+      }
+
+      .leftBorder, .socials__third, .siteDesk__third {
+        display: none;
+      }
+
+      .bottomBorder {
+        background: linear-gradient(0deg, white 15%, rgba(255, 255, 255, 0) 100%);
+      }
+
+      .slider__third > h2 {
+        top: 5%;
+        right: 22%;
+      }
+
+      .slider__third > p {
+        font-size: 4vh;
+        left: 15%;
+        width: 30%;
+      }
+  
+      .siteDesk__third {
+        width: 30%;
+        font-size: 14px;
+      }
+
+      .footer__third {
+        width: calc(100% - 120px);
+      }
+
+      .navArrows__third {
+        width: 100%;
+        justify-content: space-between;
+      }
+    }
+  }  
+}
+
+@media (max-width: 640px) {
+  #third {
+    padding: 0px 60px 0 60px;
+  }
+
+  .header__third {
+    padding-top: 70px;
+  }
+
+  .menu__third {
+    gap: 20px;
+  }
+
+  .main__third {
+    margin-top: 120px;
+    height: 500px;
+  }
+
+  .socialButton__third, .navButton__third {
+    height: 37px;
+    width: 37px;
+    font-size: 20px;
+  }
+
+  .leftBorder {
+    opacity: 0;
+  }
+
+  .sliderBlock__third {
+    width: 100%;
+    height: 80vh;
+    right: 37px;
+  }
+
+  .sliderCircle {
+    width: 450px;
+    height: 450px;
+  }
+
+  .slider__third > p {
+    top: 13%;
+    left: 10%;
+  }
+  
+  .slider__third > h2 {
+    bottom: 18%;
+    right: 14%;
+  }
+
+  .sliderImage {
+    width: 80%;
+  }
+
+  .siteDesk__third {
+    width: 50%;
+    margin: 0;
+    font-size: 16px;
+  }
+
+  .footer__third {
+    width: calc(100% - 120px);
+  }
+
+  @media (orientation: portrait) {
+    #third {
+      padding: 20px 30px 20px 30px;
+    }
+
+    .header__third {
+      padding-top: 15px;
+    }
+
+    .siteName__third {
+      font-size: 26px;
+    }
+
+    .main__third {
+      margin-top: 50px;
+      justify-content: center;
+      align-items: start;
+    }
+
+    .sliderCircle {
+      width: 250px;
+      height: 250px;
+    }
+
+    .leftBorder, .socials__third, .siteDesk__third, .menu__third {
+      display: none;
+    }
+
+    .bottomBorder {
+      background: linear-gradient(0deg, white 35%, rgba(255, 255, 255, 0) 100%);
+    }
+
+    .slider__third > h2 {
+      top: 50%;
+      right: 22%;
+    }
+
+    .slider__third > p {
+      font-size: 3vh;
+      left: 15%;
+      top: 0;
+      width: 30%;
+    }
+
     .siteDesk__third {
       width: 30%;
       font-size: 14px;
     }
 
     .footer__third {
-      width: calc(100% - 240px);
+      width: calc(100% - 60px);
     }
-  }  
-}
 
-@media (max-width: 640px) {
+    .navArrows__third {
+      width: 100%;
+      justify-content: space-between;
+    }
+  }
 
+  @media (orientation: landscape) {
+    #third {
+      padding: 0px 60px 0 60px;
+    }
+
+    .header__third {
+      padding-top: 30px;
+    }
+
+    .siteName__third {
+      font-size: 22px;
+    }
+
+    .main__third {
+      margin-top: 20px;
+      justify-content: center;
+      align-items: start;
+    }
+
+    .sliderCircle {
+      width: 250px;
+      height: 250px;
+    }
+
+    .leftBorder, .socials__third, .siteDesk__third, .menu__third {
+      display: none;
+    }
+
+    .sliderBlock__third {
+      height: 75vh;
+    }
+
+    .bottomBorder {
+      background: linear-gradient(0deg, white 15%, rgba(255, 255, 255, 0) 100%);
+    }
+
+    .slider__third > h2 {
+      top: 45%;
+      right: 22%;
+    }
+
+    .slider__third > p {
+      font-size: 4vh;
+      top: 5%;
+      left: 15%;
+      width: 30%;
+    }
+
+    .siteDesk__third {
+      width: 30%;
+      font-size: 14px;
+    }
+
+    .footer__third {
+      width: calc(100% - 120px);
+    }
+
+    .navArrows__third {
+      width: 100%;
+      justify-content: space-between;
+    }
+  }
 }
