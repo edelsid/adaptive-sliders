@@ -36,6 +36,10 @@
   border-radius: 50%;
 }
 
+.siteName__fourth__mobile {
+  display: none;
+}
+
 .menu__fourth {
   justify-content: end;
 }
@@ -135,7 +139,7 @@
 @media (min-width: 641px) and (max-width: 1199px) {
   @media (orientation: portrait) {
     #fourth {
-      padding: 50px 100px 50px 100px;
+      padding: 50px 70px 50px 70px;
     }
 
     .textBlock__fourth > h1 {
@@ -144,7 +148,7 @@
     }
 
     .textBlock__fourth > p {
-      font-size: 17px;
+      font-size: 18px;
     }
 
     .menu__fourth {
@@ -183,9 +187,125 @@
     .slider__fourth {
       width: 30vw;
     }
+
+    @media (max-height: 450px) {
+      #fourth {
+        padding: 50px;
+      }
+
+      .header__fourth {
+        margin-bottom: 20px;
+      }
+
+      .headerButton__fourth {
+        width: 30px;
+        height: 30px;
+        font-size: 18px;
+      }
+  
+      .menu__fourth, .socials__fourth {
+        display: none;
+      }
+
+      .textBlock__fourth {
+        width: 100%;
+      }
+  
+      .textBlock__fourth > h1 {
+        font-size: 45px;
+        margin-bottom: 20px;
+      }
+
+      .textBlock__fourth > p {
+        font-size: 16px;
+      }
+    }
   }  
 }
 
 @media (max-width: 640px) {
+  .siteName__fourth__mobile {
+    display: inline;
+  }
 
+  .menu__fourth, .socials__fourth, .siteName__fourth {
+    display: none;
+  }
+
+  .sliderNumbers__fourth > li {
+    height: 25px;
+    width: 25px;
+  }
+
+  .textBlock__fourth {
+    width: 100%;
+  }
+
+  .sliderNumbers__fourth > li, .textBlock__fourth > p {
+    font-size: 14px;
+  }
+
+  @media (orientation: portrait) {
+    #fourth {
+      padding: 0;
+      flex-direction: column;
+      gap: 2vh;
+    }
+
+    .textWrapper {
+      padding: 30px 30px 0 30px;
+    }
+
+    .sliderCounter__fourth, .sliderNumbers__fourth {
+      flex-direction: row;
+    }
+
+    .textBlock__fourth {
+      margin-top: 20px;
+    }
+
+    .textBlock__fourth > p {
+      font-size: 2.3vh;
+    }
+
+    .sliderBlock__fourth {
+      margin-left: -15px;
+      flex-direction: row;
+      gap: 15px;
+    }
+
+    .slider__fourth {
+      height: 60vh;
+    }
+  }
+
+  @media (orientation: landscape) {
+    #fourth {
+      padding: 30px;
+      gap: 10px;
+    }
+
+    .header__fourth {
+      margin-bottom: 20px;
+    }
+
+    .headerButton__fourth {
+      width: 30px;
+      height: 30px;
+      font-size: 18px;
+    }
+
+    .textWrapper {
+      width: 40vw;
+    }
+
+    .sliderBlock__fourth {
+      margin-top: -150px;
+      gap: 20px;
+    }
+
+    .slider__fourth {
+      width: 30vw;
+    }
+  }
 }

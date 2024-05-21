@@ -58,7 +58,10 @@ export default class FourthBlock {
         break;
       default: this.getToSlide(e.target.id, height);
     };
-    this.wrapper.style.transform = `translateY(${this.up}px)`;
+    if (screen.width > 640 || (screen.width < 640 && screen.height < screen.width)) 
+      this.wrapper.style.transform = `translateY(${this.up}px)`;
+    else if (screen.width < 640 && screen.height > screen.width) 
+      this.wrapper.style.transform = `translateX(${this.up}px)`;
     this.setCounter();
   }
 
