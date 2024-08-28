@@ -82,13 +82,24 @@
   position: absolute;
 }
 
+.textBlock__second h1, .navButton__second {
+  text-shadow: -1px 1px 0 white,
+  1px 1px 0 white,
+  1px -1px 0 white,
+  -1px -1px 0 white;
+}
+
 .textBlock__second h1 {
-  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+  color: black;
 }
 
 .tripDesk {
+  padding: 10px;
   width: 85%;
-  font-size: 16px;
+  font-size: 18px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
 }
 
 .navArrows__second {
@@ -173,7 +184,7 @@
     }
 
     .textBlock__second {
-      width: 50vh;
+      width: 40vh;
       top: 160%;
     }
 
@@ -225,16 +236,25 @@
         padding: 0 50px 0 50px;
       }
 
+      .siteName__second {
+        font-size: 16px;
+      }
+
       .whiteBlock {
         margin: 40px 0 40px 0;
       }
 
+      .textBlock__second {
+        width: 160%;
+      }
+
       .textBlock__second h1 {
-        font-size: 50px;
+        font-size: 30px;
       }
 
       .tripDesk {
         width: 100%;
+        font-size: 16px;
       }
 
       .navArrows__second {
@@ -246,7 +266,8 @@
       }
 
       .additional > p {
-        margin: 30px 0 30px 0;
+        margin: 20px 0 20px 0;
+        font-size: 14px;
       }
     }
   }  
@@ -259,7 +280,7 @@
 
   @media (orientation: portrait) {
     #second {
-      padding: 20px 0 0 0;
+      padding: 40px 0 0 0;
     }
 
     .main__second {
@@ -267,16 +288,18 @@
     }
 
     .whiteBlock {
-      height: 30vh;
+      height: 25vh;
       padding: 0 20px 0 20px;
     }
 
     .siteName__second {
       font-size: 5vh;
+      text-align: center;
+      width: 100%;
     }
 
     .sliderBlock__second {
-      height: 70vh;
+      height: 75vh;
     }
 
     .textBlock__second {

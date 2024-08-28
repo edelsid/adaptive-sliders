@@ -260,6 +260,10 @@
       flex-direction: row;
     }
 
+    .navButton__fourth {
+      transform: rotate(270deg);
+    }
+
     .textBlock__fourth {
       margin-top: 20px;
     }

@@ -3,13 +3,13 @@ export default class ThirdBlock {
     this.body = block;
     this.sliders = sliders;
     this.currentSlider = 0;
-    this.circle = block.querySelector(".sliderCircle");
-    this.sliderWindow = block.querySelector(".sliderImage");
-    this.counter = block.querySelector(".sliderCounter__third");
+    this.circle = block.querySelector('.sliderCircle');
+    this.sliderWindow = block.querySelector('.sliderImage');
+    this.counter = block.querySelector('.sliderCounter__third');
     this.change = this.change.bind(this);
     this.next = this.next.bind(this);
     this.back = this.back.bind(this);
-    this.colors = ["#ffa500", "#79ff7d", "#df36ca", "#9b3131", "#c0e91a", "#dcfa58", "#4225aa"];
+    this.colors = ['#ffa500', '#79ff7d', '#df36ca', '#9b3131', '#c0e91a', '#dcfa58', '#4225aa'];
   }
 
   init() {
@@ -20,18 +20,18 @@ export default class ThirdBlock {
 
   bindImage() {
     this.sliderWindow.style.backgroundImage = `url(${this.sliders[this.currentSlider]})`;
-    this.counter.innerText = this.currentSlider + 1 > 10 ? (this.currentSlider + 1) : '0' + (this.currentSlider + 1);
+    this.counter.innerText = this.currentSlider + 1 > 10 ? (this.currentSlider + 1) : `0${this.currentSlider + 1}`;
   }
 
   bindButtons() {
-    const buttons = Array.from(this.body.querySelectorAll(".navArrows__third"));
+    const buttons = Array.from(this.body.querySelectorAll('.navArrows__third'));
     buttons.forEach((button) => {
-      button.addEventListener("click", this.change);
+      button.addEventListener('click', this.change);
     });
   }
 
   change(e) {
-    e.target.id === "next" ? this.next() : this.back();
+    e.target.id === 'next' ? this.next() : this.back();
     this.bindImage();
     this.circle.style.backgroundColor = this.colors[this.currentSlider];
   }

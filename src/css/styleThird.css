@@ -461,11 +461,11 @@
     }
 
     .main__third {
-      margin-top: 50px;
+      margin-top: 150px;
     }
 
     .bottomBorder {
-      background: linear-gradient(0deg, white 35%, rgba(255, 255, 255, 0) 100%);
+      background: linear-gradient(0deg, white 55%, rgba(255, 255, 255, 0) 100%);
     }
 
     .slider__third > h2 {
@@ -474,7 +474,7 @@
     }
 
     .slider__third > p {
-      font-size: 3vh;
+      font-size: 2.5vh;
       left: 15%;
       top: 0;
       width: 30%;
