@@ -1,5 +1,9 @@
 # Random Sliders
 
+[![pages-build-deployment](https://github.com/edelsid/adaptive-sliders/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/edelsid/adaptive-sliders/actions/workflows/pages/pages-build-deployment)
+
+[GitHub Pages](https://edelsid.github.io/adaptive-sliders/)
+
 This is a collection of four slider panels of various designs, a sort of exercise for me to practice adaptive design for tablets and mobile devices.
 
 All images were taken from [Unsplash](https://unsplash.com).
